@@ -414,7 +414,7 @@ const parsedQuery = computed<ParsedQuery>(() => {
 })
 
 /** Validated suggestions (only those that exist) */
-const validatedSuggestions = ref<ValidatedSuggestion[]>([])
+const validatedSuggestions = shallowRef<ValidatedSuggestion[]>([])
 const suggestionsLoading = shallowRef(false)
 
 /** Debounced function to validate suggestions */
